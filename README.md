@@ -1,44 +1,19 @@
-# RAG PDF Q&A 
+1) git clone https://github.com/Somrajkarki/Pdf-summarizer.git
 
-### Ollama setup
-```
-# Mac
-https://ollama.com/download/Ollama-darwin.zip
+2) Install ollama from the web 
+https://ollama.com/download
 
-# Ubuntu 20.04
-curl -fsSL https://ollama.com/install.sh | sh
+In terminal enter the following commands
 
-verify:
-ollama
-    this will run without any error
-ollama run mistral
-    this will show options without any error
-
-ollama run mistral:instruct 
-```
-
-## Set up
-```
-python --verison
-Python 3.11.7
-
+.\myenv\Scripts\activate 
 pip install -r requirements.txt
-```
 
-### Test local
-```
-jupyter lab
+pip install streamlit
 
-verify:
-http://0.0.0.0:
-```
+ollama run llama2:7b
 
-```
-open pdf-qa.ipynb
-```
+//dont forget to change model name to the one you selected above in app.py. (2-3 times)
 
-To run Streamlit app:
+streamlit run app.py
 
-```
-Streamlit run streamlit-app.py
-```
+//You are good to go.
