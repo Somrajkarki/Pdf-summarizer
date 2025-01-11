@@ -51,7 +51,7 @@ if 'vectorstore' not in st.session_state:
 if 'llm' not in st.session_state:
     st.session_state.llm = Ollama(
         base_url="http://localhost:11434",
-        model="llama2",
+        model="llama2:7b",
         verbose=True,
         callback_manager=CallbackManager([StreamingStdOutCallbackHandler()])
     )
@@ -110,7 +110,7 @@ def load_or_create_vectorstore(documents):
         try:
             vectorstore = Chroma(
                 persist_directory="data",
-                embedding_function=OllamaEmbeddings(model="llama2")
+                embedding_function=OllamaEmbeddings(model="llama2:7b")
             )
             return vectorstore
         except Exception as e:
