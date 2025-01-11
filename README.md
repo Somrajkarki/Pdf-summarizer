@@ -1,6 +1,8 @@
-1) git clone https://github.com/Somrajkarki/Pdf-summarizer.git
+Installation guide
 
-2) Install ollama from the web 
+git clone https://github.com/Somrajkarki/Pdf-summarizer.git
+
+Install ollama from the web 
 https://ollama.com/download
 
 In terminal enter the following commands
