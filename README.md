@@ -1,4 +1,4 @@
-Installation guide
+INSTALLATION GUIDE
 
 git clone https://github.com/Somrajkarki/Pdf-summarizer.git
 
